@@ -29,3 +29,7 @@ This fork has many improvements, security changes and new features
  * Import master zones from many bind sources
  * Check slave zones with zonetransfer
  * IDN capabilities - you just use UTF-8 characters
+
+## Attention
+The main repository there is in [my own](https://git.myonline.hu/pty/smbind-ng)
+site. Please use that mainly.
