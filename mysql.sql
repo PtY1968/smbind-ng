@@ -29,7 +29,7 @@ CREATE TABLE `dnssec_keys` (
   KEY `arch` (`archive`),
   KEY `filen` (`filename`),
   CONSTRAINT `fkdskeys` FOREIGN KEY (`dszone`) REFERENCES `dnssec_zones` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -56,7 +56,7 @@ CREATE TABLE `dnssec_zones` (
   UNIQUE KEY `id` (`id`),
   KEY `dsnam` (`zone`),
   CONSTRAINT `fkdszones` FOREIGN KEY (`zone`) REFERENCES `zones` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -114,7 +114,7 @@ CREATE TABLE `records` (
   KEY `reczone` (`zone`),
   KEY `rech` (`host`),
   CONSTRAINT `fkrecords` FOREIGN KEY (`zone`) REFERENCES `zones` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=765 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -144,7 +144,7 @@ CREATE TABLE `slave_zones` (
   UNIQUE KEY `sznam` (`name`),
   KEY `szupd` (`updated`),
   KEY `szow` (`owner`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -173,7 +173,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `usnam` (`username`),
   KEY `uspass` (`password`),
   KEY `admin` (`admin`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -212,7 +212,7 @@ CREATE TABLE `zones` (
   KEY `zonval` (`valid`),
   KEY `zonow` (`owner`),
   KEY `zonupd` (`updated`)
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
