@@ -42,14 +42,14 @@ by owned group.
 2. Create a file with same permissions in this directory for saving zone
 definitions - eg.  
    *touch smbind-ng.conf.*
-3. Create a subdirectory for keeping zone files with same permissions at the
-step 1.
+3. Create a subdirectory for keeping zone files with write permissions by 
+www-data and bind group.
 
 ### Modify bind configuration
 On your bind options set this folder to use with *directory* option and
 *managed-keys* option (folder created at the step 3 above).  
-Include the master and slave configuration files into your bind config - what
-created at the step 2.
+Include the master configuration files into your bind config - what created at 
+the step 2.
 
 Restart your bind daemon.
 
