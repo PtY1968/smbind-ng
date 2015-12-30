@@ -257,7 +257,7 @@
                 $dbopt = array('persistent' => true,);
                 $db = MDB2::factory($dsn, $dbopt);
                 if (MDB2::isError($db)) {
-                    die("Database error: " . MDB2::errorMessage($dbconnect));
+                    die("Database error: " . MDB2::errorMessage($db));
                 } else {
                     $db->setFetchMode(MDB2_FETCHMODE_ASSOC);
                 }
