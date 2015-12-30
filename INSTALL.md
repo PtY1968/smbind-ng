@@ -53,6 +53,14 @@ the step 2.
 
 Restart your bind daemon.
 
+#### *Under bind9.9 or later only*
+You need to add your options the  
+  *masterfile-format text;*  
+line, because these versions keep the zone files as binary format, and you
+couldn't preview the slave zones as human readable.
+
+Restart your bind daemon
+
 ### Database
 Create a database user with full permission to access a non existing database
 with any name.  
