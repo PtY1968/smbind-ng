@@ -33,3 +33,6 @@ This fork has many improvements, security changes and new features
 ## Attention
 The main repository there is in [my own](https://git.myonline.hu/pty/smbind-ng)
 site. Please use that mainly.
+
+## Installation
+See [INSTALL.md](INSTALL.md)
