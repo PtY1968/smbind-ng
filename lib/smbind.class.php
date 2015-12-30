@@ -585,6 +585,7 @@
             }
             return $ret;
         }
+
         public function getDeletedZones($zonetype = NULL) {
             $ret = array();
             if (is_string($zonetype)) {

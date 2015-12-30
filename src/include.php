@@ -525,7 +525,7 @@ function menu_buttons() {
 
     $cmasters = $user->getCommitableZones('master');
     $cmc = (is_array($cmasters)) ? sizeof($cmasters) : 0;
-    $cslaves = intval($user->getCommitableZones('slave'));
+    $cslaves = $user->getCommitableZones('slave');
     $csc = (is_array($cslaves)) ? sizeof($cslaves) : 0;
     $commitables = $cmc + $csc;
     if($commitables == 0) {

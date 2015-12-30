@@ -43,7 +43,7 @@ $smarty->assign("pagetitle", "Slave zones");
 $smarty->assign("template", "slave_zoneread.tpl");
 $smarty->assign("help", help("zoneread"));
 $smarty->assign("menu_button", menu_buttons());
-$smarty->assign("page_root", $src . "zonelist.php?");
+$smarty->assign("page_root", $src . "slave_zonelist.php?");
 $smarty->display("main.tpl");
 
 ?>
