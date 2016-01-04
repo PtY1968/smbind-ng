@@ -1,3 +1,4 @@
+# Required parts
 <?php
 $_CONF['db_type']       = '';
 $_CONF['db_user']       = '';
