@@ -528,7 +528,11 @@ function menu_buttons() {
     $cmc = (is_array($cmasters)) ? sizeof($cmasters) : 0;
     $cslaves = $user->getCommitableZones('slave');
     $csc = (is_array($cslaves)) ? sizeof($cslaves) : 0;
-    $commitables = $cmc + $csc;
+    $dmasters = $user->getDeletedZones('master');
+    $dmc = (is_array($dmasters)) ? sizeof($dmasters) : 0;
+    $dslaves = $user->getDeletedZones('slave');
+    $dsc = (is_array($dslaves)) ? sizeof($dslaves) : 0;
+    $commitables = $cmc + $csc + $dmc + $dsc;
     if($commitables == 0) {
         $committext = "";
         $smarty->assign("donotcommit","yes");
@@ -542,8 +546,7 @@ function menu_buttons() {
         sizeof($user->getDeletedZones('slave')) +
         sizeof($user->getDeletedZones('master')) > 0) {
         $maintext = "\" class=\"attention";
-    }
-    else {
+    } else {
         $maintext = "";
     }
 

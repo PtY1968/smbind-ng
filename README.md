@@ -1,4 +1,6 @@
 # SMBind-ng
+v0.91c
+
 This is a forked project from [smbind](http://sourceforge.net/projects/smbind/).
 
 This fork has many improvements, security changes and new features
