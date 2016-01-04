@@ -1,4 +1,5 @@
 # SMBind-ng Installation Guide
+v0.91c
 
 ## Requirements
  * Any kind of webserver with php usage abilities (tested on apache2, lighttpd,

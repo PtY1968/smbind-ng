@@ -86,7 +86,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && ($cap_rsp == NULL)
 }
 
 $user = new User();
-$smarty->assign("loggedinuser",$user->getFullName());
+$smarty->assign("loggedinuser",preg_replace('/\s/', '&nbsp;', $user->getFullName()));
 
 if ($user->getId() == 0) {
     login_page($smarty);
@@ -100,6 +100,7 @@ if ((isset($_SERVER['PHP_SELF'])) && (basename($_SERVER['PHP_SELF']) != 'index.p
 
 if($user->isAdmin()) {
     $smarty->assign("admin", "yes");
+    $smarty->assign("version", $conf->version);
 } else {
     $smarty->assign("admin", "no");
 }

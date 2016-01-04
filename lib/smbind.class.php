@@ -211,7 +211,8 @@
             if (is_string($path)) {
                 $_CONF['smbind_ng'] = $path;
                 $_CONF['title'] = "SMBind-ng";
-                $_CONF['footer'] = $_CONF['title'] . " v0.91b";
+                $_CONF['version'] = 'v0.91c';
+                $_CONF['footer'] = $_CONF['title'] . $_CONF['version'];
                 $_CONF['marker'] = "Forked by PtY 2015(GPL)";
                 $_CONF['template'] = "default";
                 $_CONF['recaptcha'] = false;
